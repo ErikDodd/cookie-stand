@@ -1,6 +1,10 @@
 h1, h2, h3 {
     font-family: 'Anton', sans-serif;
     color: salmon;
+    background-color: antiquewhite;
+    text-align: center;
+    margin: 10px 5px;
+    padding: 10px;
 }
 
  p {
@@ -17,6 +21,11 @@ body {
     background-color: aqua;
 }
 
-.img {
-    b
+section{
+    border: solid black
+    
+}
+
+nav {
+    
 }
