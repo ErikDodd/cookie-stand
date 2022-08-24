@@ -20,12 +20,12 @@ function Store(name, minCust, maxCust, avgCookieSale) {
   allStores.push(this);
 }
 
-// Prototypes for Random Number
+// Function for Random Number
 Store.prototype.generateRandomNumber = function () {
   return Math.floor(Math.random() * (this.maxCust + 1)) + this.minCust;
 };
 
-// Prototype for Cookie Totals
+// Function for Cookie Totals
 Store.prototype.generateCookieTotals = function () {
   for (let i = 0; i < storeHours.length; i++) {
     // Steps that are happening for each hour
@@ -36,7 +36,7 @@ Store.prototype.generateCookieTotals = function () {
     this.totalDailyCookies += roundedCookieNumber;
   }
 };
-
+// Function for Generate
 Store.prototype.generateAndRender = function () {
   let tableRow = document.createElement('tr');
   let tableData = document.createElement('td');
@@ -49,9 +49,16 @@ Store.prototype.generateAndRender = function () {
     tableRow.appendChild(tableDataElement);
   }
   tableBody.appendChild(tableRow);
-  // let tableFooter = document.createElement('th');
-  // tableHead.textContent = this.totalDailyCookies;
-  // tableHead.appendChild(tableFooter);
+};
+
+function hoursOfOperations() {
+  for (let i = 0; i < storeHours.length; i++) {
+    let tableHeader = document.getElementById('thead');
+    let newHead = document.createElement('th');
+    tableHeader.appendChild(newHead);
+    newHead.textContent = storeHours[i];
+    // table.appendChild(tableHeader);
+  }
 };
 
 
@@ -78,7 +85,7 @@ Store.prototype.generateAndRender = function () {
 
 // Function for Adding Stores
 function addStore (data) {
- new Store(data.name, data.minCust, data.maxCust, data.avgCookieSale);
+  new Store(data.name, data.minCust, data.maxCust, data.avgCookieSale);
 }
 // let seattle = new Store('Seattle', 23, 65, 6.3);
 
@@ -119,9 +126,10 @@ addStore({
 });
 
 console.log(allStores);
+hoursOfOperations();
 
 // for (let i = 0; i < allStores.length; i++) {
-  // allStores[i].generateAndRender();
+// allStores[i].generateAndRender();
 // }
 
 // Invoking the Functions for each Store
