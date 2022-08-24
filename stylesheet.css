@@ -1,10 +1,29 @@
 h1, h2, h3 {
     font-family: 'Anton', sans-serif;
     color: salmon;
-    background-color: antiquewhite;
     text-align: center;
     margin: 10px 5px;
     padding: 10px;
+}
+
+h1 {
+    display: inline-block;
+    width: 30%;
+    /* vertical-align: top; */
+}
+
+nav {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+}
+
+header {
+    border: thin salmon;
+}
+
+.logo {
+    width: 200px;
 }
 
  p {
@@ -12,9 +31,16 @@ h1, h2, h3 {
     color: red;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 ol, ul {
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(6, 5, 5);
+    color: salmon;
 }
 
 body {
@@ -22,10 +48,7 @@ body {
 }
 
 section{
-    border: solid black
+    border: solid salmon
     
 }
 
-nav {
-    display: inline-block;
-}
