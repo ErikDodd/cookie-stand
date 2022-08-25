@@ -62,7 +62,7 @@ function generateHeader() {
     let newHead = document.createElement('th');
     tableHeader.appendChild(newHead);
     newHead.textContent = storeHours[i];
-    // table.appendChild(tableHeader);
+    // tableHeader.appendChild(tableHeader);
   }
 }
 
@@ -112,7 +112,24 @@ new Store('Dubai', 11, 38, 3.7);
 new Store('Paris', 20, 38, 3.7);
 new Store('Lima', 2, 16, 4.6);
 
+//Form for New Store
 
+let formElement = document.getElementById('New_Store_Form');
+
+formElement.addEventListener('submit', function (event) {
+  event.preventDefault();
+  console.log(event);
+  console.log(event.target);
+  console.log(event.target.New_location);
+  console.log(event.target.New_MinCust);
+  console.log(event.target.New_MaxCust);
+  console.log(event.target.New_CookiesPerHour);
+
+  let { New_location, New_MinCust, New_MaxCust } = event.target;
+
+
+  // generateFooter();
+});
 
 console.log(allStores);
 generateHeader();

@@ -85,7 +85,7 @@ main {
 
 section {
     border: thick solid salmon;
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 
 p {
