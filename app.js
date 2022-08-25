@@ -3,9 +3,6 @@
 //--------------------GLOBAL VARIABLES/IMPORTS
 let storeHours = ['6:00am', '7:00am', '8:00am', '9:00am', '10:00am', '11:00am', '12:00pm', '1:00pm', '2:00pm', '3:00pm', '4:00pm', '5:00pm', '6:00pm', '7:00pm'];
 
-// Store Variable and Adding All Store Locations
-
-
 let tableBody = document.getElementById('tbody');
 
 //--------------------CONSTRUCTORS
@@ -118,6 +115,7 @@ function generateFooter () {
   row.appendChild(cell);
 }
 
+// Creating Each New Store/Location
 let allStores = [];
 
 new Store('Seattle', 23, 65, 6.3);
@@ -127,8 +125,6 @@ new Store('Paris', 20, 38, 3.7);
 new Store('Lima', 2, 16, 4.6);
 
 //--------------------EVENT LISTENERS
-
-//Form for New Store &
 
 let formElement = document.getElementById('New_Store_Form');
 
@@ -149,6 +145,7 @@ formElement.addEventListener('submit', function (event) {
     +New_MaxCust.value,
     +New_CookiesPerHour.value
   );
+
   console.log(allStores);
   let tfoot = document.getElementById('tfoot');
   tfoot.textContent = '';
@@ -158,7 +155,6 @@ formElement.addEventListener('submit', function (event) {
 
 //--------------------FUNCTION CALLS
 
-console.log(allStores);
 generateHeader();
 generateFooter();
 
