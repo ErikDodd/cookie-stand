@@ -57,6 +57,7 @@ function generateHeader() {
   let tableHeader = document.getElementById('thead');
   let newHead = document.createElement('th');
   tableHeader.appendChild(newHead);
+
   for (let i = 0; i < storeHours.length; i++) {
     let newHead = document.createElement('th');
     tableHeader.appendChild(newHead);

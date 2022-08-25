@@ -6,49 +6,84 @@ h1, h2, h3 {
     padding: 10px;
 }
 
-h1 {
-    display: inline-block;
-    width: 30%;
-    /* vertical-align: top; */
-}
-
-nav {
-    display: inline-block;
-    width: 30%;
-    vertical-align: top;
-}
-
 header {
-    border: thin salmon;
-}
-
-.logo {
-    width: 200px;
-}
-
- p {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: red;
-}
-
-main {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 960px;
+
+    font-size: 20px;
+    row-gap: 30px; 
+    border: thick solid salmon;
+    border-radius: 20px;
 }
 
-ol, ul {
+ul{
+    display: flex;
+    justify-content: space-evenly;
     font-family: Arial, Helvetica, sans-serif;
     color: salmon;
 }
 
-body {
-    background-color: aqua;
+li {
+    display: flex;
+    justify-content: space-evenly;
 }
 
-section{
-    border: solid salmon
-    
+#About-Us {
+    display: flex;
+    justify-content: space-evenly;
 }
+
+#About-Us-Text {
+    display: flex;
+    flex-direction: column;
+}
+
+#Locations {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#Locations-Text {
+    display: flex;
+    flex-direction: column;
+}
+
+#Hours-Of-Operations {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#Hours-Of-Operations-Text {
+    display: flex;
+    justify-content: column;
+}
+
+body {
+    background-color: aqua;
+    width: 960px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main {
+    background-color: white;
+}
+
+section {
+    border: thick solid salmon;
+    border-radius: 10px;
+}
+
+p {
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     color: black;
+}
+
 
