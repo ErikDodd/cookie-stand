@@ -8,15 +8,16 @@ h1, h2, h3 {
 
 header {
     display: flex;
-    justify-content: center;
+    /* justify-content: right; */
     justify-content: space-evenly;
     width: 100%;
-    max-width: 960px;
-
     font-size: 20px;
-    row-gap: 30px; 
     border: thick solid salmon;
     border-radius: 20px;
+}
+
+#salmonIcon {
+    width: 10%;
 }
 
 ul{
@@ -31,6 +32,11 @@ li {
     justify-content: space-evenly;
 }
 
+#LogoAndHeader {
+    display: flex;
+    flex-direction: column;
+}
+
 #About-Us {
     display: flex;
     justify-content: space-evenly;
@@ -40,6 +46,7 @@ li {
     display: flex;
     flex-direction: column;
 }
+
 
 #Locations {
     display: flex;
@@ -51,19 +58,19 @@ li {
     flex-direction: column;
 }
 
+#family {
+    width: 35%;
+}
+
 #Hours-Of-Operations {
     display: flex;
     justify-content: space-evenly;
 }
 
-#Hours-Of-Operations-Text {
-    display: flex;
-    justify-content: column;
-}
 
 body {
     background-color: aqua;
-    width: 960px;
+    width: 1080px;
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -84,6 +91,10 @@ section {
 p {
      font-family: Georgia, 'Times New Roman', Times, serif;
      color: black;
+}
+
+#hours {
+    font-size: 40px;
 }
 
 
