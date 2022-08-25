@@ -1,31 +1,100 @@
 h1, h2, h3 {
     font-family: 'Anton', sans-serif;
     color: salmon;
-    background-color: antiquewhite;
     text-align: center;
     margin: 10px 5px;
     padding: 10px;
 }
 
- p {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: red;
+header {
+    display: flex;
+    /* justify-content: right; */
+    justify-content: space-evenly;
+    width: 100%;
+    font-size: 20px;
+    border: thick solid salmon;
+    border-radius: 20px;
 }
 
-ol, ul {
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(6, 5, 5);
+#salmonIcon {
+    width: 10%;
 }
+
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: Arial, Helvetica, sans-serif;
+    color: salmon;
+}
+
+li {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#LogoAndHeader {
+    display: flex;
+    flex-direction: column;
+}
+
+#About-Us {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#About-Us-Text {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#Locations {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#Locations-Text {
+    display: flex;
+    flex-direction: column;
+}
+
+#family {
+    width: 35%;
+}
+
+#Hours-Of-Operations {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 
 body {
     background-color: aqua;
+    width: 1080px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
-section{
-    border: solid black
-    
+main {
+    background-color: white;
 }
 
-nav {
-    display: inline-block;
+section {
+    border: thick solid salmon;
+    border-radius: 10px;
 }
+
+p {
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     color: black;
+}
+
+#hours {
+    font-size: 40px;
+}
+
+
