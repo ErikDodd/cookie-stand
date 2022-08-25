@@ -1,9 +1,14 @@
 'use strict';
 
-// Global Variables
+//--------------------GLOBAL VARIABLES/IMPORTS
 let storeHours = ['6:00am', '7:00am', '8:00am', '9:00am', '10:00am', '11:00am', '12:00pm', '1:00pm', '2:00pm', '3:00pm', '4:00pm', '5:00pm', '6:00pm', '7:00pm'];
-// let table = document.getElementById('SalesData');
+
+// Store Variable and Adding All Store Locations
+
+
 let tableBody = document.getElementById('tbody');
+
+//--------------------CONSTRUCTORS
 
 
 // Store Constructor Function
@@ -18,6 +23,8 @@ function Store(name, minCust, maxCust, avgCookieSale) {
   this.generateAndRender();
   allStores.push(this);
 }
+
+//--------------------CONSTRUCTOR METHODS
 
 // Prototype Function for Random Number
 Store.prototype.generateRandomNumber = function () {
@@ -35,7 +42,7 @@ Store.prototype.generateCookieTotals = function () {
     this.totalDailyCookies += roundedCookieNumber;
   }
 };
-// Function for Generate And Render
+// Function for Generate And Render the Table
 Store.prototype.generateAndRender = function () {
   let tableRow = document.createElement('tr');
   let tableData = document.createElement('td');
@@ -53,6 +60,10 @@ Store.prototype.generateAndRender = function () {
   tableRow.appendChild(tableData);
 };
 
+//--------------------FUNCTIONS
+
+
+// Function for Generating the Hours Displayed As Header
 function generateHeader() {
   let tableHeader = document.getElementById('thead');
   let newHead = document.createElement('th');
@@ -62,12 +73,17 @@ function generateHeader() {
     let newHead = document.createElement('th');
     tableHeader.appendChild(newHead);
     newHead.textContent = storeHours[i];
-    // tableHeader.appendChild(tableHeader);
   }
+
+  let dailyLocationTotalsHeader = document.getElementById('thead');
+  let newLocationTotalsHead = document.createElement('th');
+  dailyLocationTotalsHeader.appendChild(newLocationTotalsHead);
+  newLocationTotalsHead.textContent = 'Daily Location Totals';
 }
 
+// Function for Generating the Totals in the Footer
 function generateFooter () {
-  let table = document.getElementById('SalesData');
+  let table = document.getElementById('tfoot');
 
   // define row element
   let row = document.createElement('tr');
@@ -84,7 +100,6 @@ function generateFooter () {
     // inner loop through stores
     for (let store in allStores) {
       let currentStore = allStores[store];
-      console.log(currentStore);
       let currentSales = currentStore.cookiePerHour[hour];
       cookiePerHour += currentSales;
     }
@@ -103,7 +118,6 @@ function generateFooter () {
   row.appendChild(cell);
 }
 
-// Store Variable and Adding All Store Locations
 let allStores = [];
 
 new Store('Seattle', 23, 65, 6.3);
@@ -112,7 +126,9 @@ new Store('Dubai', 11, 38, 3.7);
 new Store('Paris', 20, 38, 3.7);
 new Store('Lima', 2, 16, 4.6);
 
-//Form for New Store
+//--------------------EVENT LISTENERS
+
+//Form for New Store &
 
 let formElement = document.getElementById('New_Store_Form');
 
@@ -120,28 +136,29 @@ formElement.addEventListener('submit', function (event) {
   event.preventDefault();
   console.log(event);
   console.log(event.target);
-  console.log(event.target.New_location);
-  console.log(event.target.New_MinCust);
-  console.log(event.target.New_MaxCust);
-  console.log(event.target.New_CookiesPerHour);
+  console.log(event.target.New_location.value);
+  console.log(event.target.New_MinCust.value);
+  console.log(event.target.New_MaxCust.value);
+  console.log(event.target.New_CookiesPerHour.value);
 
-  let { New_location, New_MinCust, New_MaxCust } = event.target;
+  let { New_location, New_MinCust, New_MaxCust, New_CookiesPerHour } = event.target;
 
+  let store = new Store(
+    New_location.value,
+    +New_MinCust.value,
+    +New_MaxCust.value,
+    +New_CookiesPerHour.value
+  );
+  console.log(allStores);
+  let tfoot = document.getElementById('tfoot');
+  tfoot.textContent = '';
+  generateFooter();
 
-  // generateFooter();
 });
+
+//--------------------FUNCTION CALLS
 
 console.log(allStores);
 generateHeader();
 generateFooter();
 
-// for (let i = 0; i < allStores.length; i++) {
-// allStores[i].generateAndRender();
-// }
-
-// Invoking the Functions for each Store
-// Seattle.display();
-// Tokyo.display();
-// Dubai.display();
-// Paris.display();
-// Lima.display();
