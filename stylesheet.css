@@ -8,12 +8,12 @@ h1, h2, h3 {
 
 header {
     display: flex;
-    /* justify-content: right; */
     justify-content: space-evenly;
-    width: 100%;
+    width: 95%;
     font-size: 20px;
     border: thick solid salmon;
     border-radius: 20px;
+    margin: 20px;
 }
 
 #salmonIcon {
@@ -35,11 +35,17 @@ li {
 #LogoAndHeader {
     display: flex;
     flex-direction: column;
+    border: thick solid salmon;
+    border-radius: 10px;
+    margin: 20px;
 }
 
 #About-Us {
     display: flex;
     justify-content: space-evenly;
+    border: thick solid salmon;
+    border-radius: 10px;
+    margin: 20px;
 }
 
 #About-Us-Text {
@@ -51,6 +57,9 @@ li {
 #Locations {
     display: flex;
     justify-content: space-evenly;
+    border: thick solid salmon;
+    border-radius: 10px;
+    margin: 20px;
 }
 
 #Locations-Text {
@@ -65,12 +74,15 @@ li {
 #Hours-Of-Operations {
     display: flex;
     justify-content: space-evenly;
+    border: thick solid salmon;
+    border-radius: 10px;
+    margin: 20px;
 }
 
 
 body {
     background-color: aqua;
-    width: 1080px;
+    width: 90%;
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -80,11 +92,11 @@ body {
 }
 
 main {
-    background-color: white;
+    background-color: ;
 }
 
 section {
-    border: thick solid salmon;
+    /* border: thick solid salmon; */
     /* border-radius: 10px; */
 }
 

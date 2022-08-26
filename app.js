@@ -137,6 +137,14 @@ formElement.addEventListener('submit', function (event) {
   console.log(event.target.New_MaxCust.value);
   console.log(event.target.New_CookiesPerHour.value);
 
+  // event.preventDefault();
+  // console.log(event);
+  // console.log(event.target);
+  // console.log(event.target.New_location.value);
+  // console.log(event.target.New_MinCust.value);
+  // console.log(event.target.New_MaxCust.value);
+  // console.log(event.target.New_CookiesPerHour.value);
+
   let { New_location, New_MinCust, New_MaxCust, New_CookiesPerHour } = event.target;
 
   let store = new Store(
