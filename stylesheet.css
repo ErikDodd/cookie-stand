@@ -9,17 +9,21 @@ h1, h2, h3 {
 }
 
 header {
-    display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     width: 95%;
     font-size: 20px;
     border: thick solid salmon;
     border-radius: 20px;
     margin: 20px;
+
+}
+
+#iconAndName {
+    display: flex;
 }
 
 #salmonIcon {
-    width: 10%;
+    width: 5%;
 }
 
 ul{
