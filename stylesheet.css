@@ -1,30 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@300&family=Bebas+Neue&display=swap');
+
 h1, h2, h3 {
-    font-family: 'Anton', sans-serif;
     color: salmon;
     text-align: center;
     margin: 10px 5px;
     padding: 10px;
+    font-family: 'Bebas Neue', cursive;
 }
 
 header {
-    display: flex;
-    /* justify-content: right; */
-    justify-content: space-evenly;
-    width: 100%;
+    justify-content: center;
+    width: 95%;
     font-size: 20px;
     border: thick solid salmon;
     border-radius: 20px;
+    margin: 20px;
+
+}
+
+#iconAndName {
+    display: flex;
 }
 
 #salmonIcon {
-    width: 10%;
+    width: 5%;
 }
 
 ul{
     display: flex;
     justify-content: space-evenly;
-    font-family: Arial, Helvetica, sans-serif;
-    color: salmon;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #4EC33D;
 }
 
 li {
@@ -35,42 +41,125 @@ li {
 #LogoAndHeader {
     display: flex;
     flex-direction: column;
+    border: thick solid salmon;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+#LogoAndHeaderText {
+    background-color: #00BBD7; 
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
 }
 
 #About-Us {
     display: flex;
     justify-content: space-evenly;
+    border: thick solid salmon;
+    border-radius: 10px;
+    margin: 20px;
 }
 
 #About-Us-Text {
     display: flex;
     flex-direction: column;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+#About-Us-P {
+    background-color: #00BBD7;
+    border-radius: 15px;
+}
+
+#cutter {
+    width: 15%;
+    margin: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#frostedcookie {
+    width: 15%;
+    margin: auto;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 
 #Locations {
     display: flex;
     justify-content: space-evenly;
+    border: thick solid salmon;
+    border-radius: 10px;
+    margin: 20px;
 }
 
 #Locations-Text {
     display: flex;
     flex-direction: column;
+    
+}
+
+#Location-Text-PoL {
+    background-color: #00BBD7;
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 #family {
-    width: 35%;
+    max-width: 20%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#shirt {
+    width: 20%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #Hours-Of-Operations {
     display: flex;
     justify-content: space-evenly;
+    border: thick solid salmon;
+    border-radius: 10px;
+    margin: 20px;
 }
 
+#Hours-P {
+    background-color: #00BBD7;
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#chinook {
+    width: 20%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#fourfish {
+    width: 20%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
 body {
-    background-color: aqua;
-    width: 1080px;
+    background-color: #008AA5;
+    width: 90%;
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -79,18 +168,9 @@ body {
 
 }
 
-main {
-    background-color: white;
-}
-
-section {
-    border: thick solid salmon;
-    /* border-radius: 10px; */
-}
-
 p {
      font-family: Georgia, 'Times New Roman', Times, serif;
-     color: black;
+     color: #A83932;
 }
 
 #hours {

@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@300&family=Bebas+Neue&display=swap');
+
+h1,
+h2,
+h3 {
+    color: salmon;
+    text-align: center;
+    margin: 10px 5px;
+    padding: 10px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+header {
+    justify-content: center;
+    width: 95%;
+    font-size: 20px;
+    border: thick solid salmon;
+    border-radius: 20px;
+    margin: 20px;
+
+}
+
+#iconAndName {
+    display: flex;
+}
+
+#salmonIcon {
+    width: 5%;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #4EC33D;
+}
+
+li {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+body {
+    background-color: #008AA5;
+    width: 90%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #A83932;
+}
+
+
+
+ table, th, td {
+    /* justify-content: center; */
+    text-align: center;
+    background-color: #00BBD7;
+    color: #C35046;
+    border: 1px solid;
+    margin: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+
