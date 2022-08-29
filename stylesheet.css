@@ -65,12 +65,13 @@ li {
 #About-Us-Text {
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     margin-left: 10px;
 }
 
 #About-Us-P {
     background-color: #00BBD7;
+    /* margin-bottom: 20px; */
     border-radius: 15px;
 }
 
